@@ -1,0 +1,172 @@
+# Molti-Maker Development Task List
+
+## Phase 1: Setup & Infrastructure (Day 1-2) - Feb 3-4
+- [ ] Project initialization
+  - [ ] Clone AgentMarket repo as reference
+  - [ ] Set up OpenClaw framework
+  - [ ] Initialize Monad SDK
+  - [ ] Configure development environment
+- [ ] Parent agent core
+  - [ ] Create `src/parent_agent.py` with OpenClaw
+  - [ ] Implement main orchestration loop
+  - [ ] Add logging and monitoring
+  - [ ] Test Monad wallet creation
+- [ ] Environment setup
+  - [ ] Create `.env.example` with required keys
+  - [ ] Set up Monad testnet connection
+  - [ ] Configure nad.fun API access
+  - [ ] Test Discord/Moltbook API access
+
+## Phase 2: Agent Templates (Day 3-4) - Feb 5-6
+- [ ] Copy Mindchain architecture
+  - [ ] Review Mindchain Vision Node structure
+  - [ ] Review Mindchain Text Node structure
+  - [ ] Identify reusable patterns
+- [ ] Meme agent template
+  - [ ] Create `templates/meme_agent.py`
+  - [ ] Implement meme generation logic
+  - [ ] Add Moltbook posting capability
+  - [ ] Test standalone execution
+- [ ] Trader agent template
+  - [ ] Create `templates/trader_agent.py`
+  - [ ] Implement basic trading logic
+  - [ ] Add nad.fun integration
+  - [ ] Test with mock data
+- [ ] Social agent template
+  - [ ] Create `templates/social_agent.py`
+  - [ ] Implement engagement logic
+  - [ ] Add Moltbook interaction
+  - [ ] Test social posting
+- [ ] Template testing
+  - [ ] Test all 3 templates independently
+  - [ ] Verify wallet integration
+  - [ ] Confirm API connections work
+
+## Phase 3: Agent Generator & Registry (Day 5-6) - Feb 7-8
+- [ ] Agent generation logic
+  - [ ] Create `src/agent_generator.py`
+  - [ ] Implement template cloning
+  - [ ] Add wallet creation per agent
+  - [ ] Add configuration injection
+- [ ] On-chain contracts
+  - [ ] Copy AgentRegistry.sol from AgentMarket
+  - [ ] Modify for parent-child relationships
+  - [ ] Deploy to Monad testnet
+  - [ ] Verify on Monad explorer
+- [ ] Escrow contracts
+  - [ ] Copy AgentEscrow.sol from AgentMarket
+  - [ ] Adapt revenue split (90/10)
+  - [ ] Deploy to Monad testnet
+  - [ ] Test payment flow
+- [ ] x402 integration
+  - [ ] Copy x402Payment.sol from AgentMarket
+  - [ ] Integrate with Monad
+  - [ ] Test micropayments
+  - [ ] Verify settlement
+- [ ] **CHECKPOINT: First Child Agent**
+  - [ ] Create first child agent end-to-end
+  - [ ] Verify registry registration
+  - [ ] Confirm wallet creation
+  - [ ] Test basic operations
+
+## Phase 4: Integration Testing (Day 7) - Feb 9
+- [ ] End-to-end testing
+  - [ ] Test complete agent creation flow
+  - [ ] Verify x402 payment processing
+  - [ ] Test token launching (mock)
+  - [ ] Check multi-agent coordination
+- [ ] Bug fixes
+  - [ ] Fix any wallet issues
+  - [ ] Resolve API rate limits
+  - [ ] Debug contract interactions
+  - [ ] Optimize gas usage
+- [ ] **DECISION POINT**
+  - [ ] Evaluate progress
+  - [ ] Decide: Continue or pivot to Sovereign Scout
+  - [ ] Document any blockers
+
+## Phase 5: Token Integration & Dashboard (Day 8-9) - Feb 10-11
+- [ ] Nad.fun integration
+  - [ ] Integrate nad.fun API
+  - [ ] Implement token launch function
+  - [ ] Test token creation
+  - [ ] Verify token appears on platform
+- [ ] Parent token launch
+  - [ ] Launch $MOLTI token on nad.fun
+  - [ ] Set initial supply & tokenomics
+  - [ ] Add liquidity
+  - [ ] Announce on Moltbook
+- [ ] Dashboard frontend
+  - [ ] Initialize Next.js project in `frontend/`
+  - [ ] Create main dashboard page
+  - [ ] Build agent list component
+  - [ ] Add performance metrics display
+  - [ ] Implement "Create Agent" button
+- [ ] Real-time updates
+  - [ ] Add WebSocket for live updates
+  - [ ] Display token prices
+  - [ ] Show agent status
+  - [ ] Track revenue metrics
+- [ ] Child token testing
+  - [ ] Launch 3 test child tokens
+  - [ ] Verify trading works
+  - [ ] Test revenue distribution
+  - [ ] Confirm parent receives 10%
+
+## Phase 6: Demo Preparation (Day 10) - Feb 12
+- [ ] Demo video recording
+  - [ ] Write script (3-5 minutes)
+  - [ ] Record screen capture
+  - [ ] Show live agent creation
+  - [ ] Demonstrate token launch
+  - [ ] Display performance metrics
+- [ ] Presentation materials
+  - [ ] Create pitch deck (optional)
+  - [ ] Prepare talking points
+  - [ ] Practice live demo flow
+  - [ ] Prepare backup video
+- [ ] Documentation
+  - [ ] Update main README
+  - [ ] Write API documentation
+  - [ ] Create deployment guide
+  - [ ] Add user guide
+- [ ] UI polish
+  - [ ] Fix any visual bugs
+  - [ ] Improve mobile responsiveness
+  - [ ] Add loading states
+  - [ ] Enhance error messages
+
+## Phase 7: Buffer & Submission (Day 11-12) - Feb 13-14
+- [ ] Final testing
+  - [ ] Run all automated tests
+  - [ ] Manual QA on all features
+  - [ ] Test on different browsers
+  - [ ] Verify mobile works
+- [ ] Bug fixes
+  - [ ] Fix critical bugs
+  - [ ] Resolve any contract issues
+  - [ ] Optimize performance
+  - [ ] Clean up console errors
+- [ ] Documentation review
+  - [ ] Proofread all docs
+  - [ ] Verify code attribution
+  - [ ] Check all links work
+  - [ ] Update deployment addresses
+- [ ] Submission preparation
+  - [ ] Finalize GitHub repo
+  - [ ] Upload demo video to YouTube
+  - [ ] Gather all contract addresses
+  - [ ] Collect nad.fun token links
+  - [ ] Prepare submission form
+- [ ] **SUBMIT by Feb 15**
+  - [ ] Submit via https://forms.moltiverse.dev/submit
+  - [ ] Verify submission received
+  - [ ] Announce on Discord
+  - [ ] Share on Twitter/Moltbook
+
+## Ongoing Tasks
+- [ ] Monitor agent performance
+- [ ] Track token prices
+- [ ] Engage with community
+- [ ] Respond to questions
+- [ ] Iterate based on feedback
