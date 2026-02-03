@@ -1,0 +1,5 @@
+openai
+python-dotenv
+web3
+discord.py
+requests
